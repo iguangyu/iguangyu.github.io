@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="计算机组成原理第一次作业, iGUU&#39;Blog">
+    <meta name="keywords" content="iGUU&#39;Blog">
     <meta name="description" content="didiao">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>计算机组成原理第一次作业 | iGUU&#39;Blog</title>
+    <title>iGUU&#39;Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://ftp.bmp.ovh/imgs/2021/03/c3e3e0364bca19fd.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">计算机组成原理第一次作业</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -453,7 +453,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-03-23
+                    2021-04-28
                 </div>
                 
 
@@ -474,30 +474,31 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>第一章</p>
-</blockquote>
-<ul>
-<li>1.1946年研制成功的第一台电子数字计算机称为  ENIAC   ，1949年研制成功的第一台程序内存的计算机称为  EDSAC  。</li>
-<li>2.1978年。，英特尔公司开发的    Intel 8066    是世界上第1片通用16位微处理器，可寻址存储容量是    1 MB   。</li>
-<li>3.至今为止计算机中所有信息仍以二进制方式表示的理由是    物理器件性能限制    。</li>
-<li>4.目前大多数集成电路生产中所采用的的基本材料为   单晶硅   。</li>
-<li>5.中央处理器的核心由  运算器  和  控制器  组成。</li>
-<li>6.2000年研制的Pentium 4是   1   位微处理器，一个CPU芯片内含有的晶体管数目为 2百万，可寻址的内存储器容量为   3   。</li>
-<li>7.取指周期中从内存读出的信息流称为   指令   流，执行周期中从内存读出的信息流称为  数据 流。</li>
-</ul>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/03/f27eaf128567c2cb.png"></p>
-<blockquote>
-<p>第二章</p>
-</blockquote>
-<ul>
-<li>1.计算机系统中采用补码运算的目的是为了   简化计算机的设计   。</li>
-<li>2.定长8位字长的字，采用2进制补码表示，可表示的输出范围是     -128~+127    。</li>
-<li>3.在定点二进制运算器中，减法运算一般通过    补码运算的二进制加法器   来实现。</li>
-<li>4.在定点数运算中产生溢出 的原因是    运算过程中最高位产生了进位或者错位    。</li>
-<li>5.在定点运算器中，无论采用双符号位还是单符号位，必须有  溢出   判断电路，它一般用  异或门   逻辑门实现。</li>
-</ul>
-<p>认真看：【例1】【例2】【例11】【例12】【例28】【例30】</p>
+                <h1 id="pytorch学习笔记（一）"><a href="#pytorch学习笔记（一）" class="headerlink" title="pytorch学习笔记（一）"></a>pytorch学习笔记（一）</h1><h2 id="数据操作实现"><a href="#数据操作实现" class="headerlink" title="数据操作实现"></a>数据操作实现</h2><h3 id="1-arange-用于输出从-0-所设值-1-的向量"><a href="#1-arange-用于输出从-0-所设值-1-的向量" class="headerlink" title="1.arange()  用于输出从 0~所设值-1 的向量"></a>1.arange()  用于输出从 0~所设值-1 的向量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = torch.arange(<span class="number">12</span>)  <span class="comment">#输出从0到11的一维向量</span></span><br><span class="line">x</span><br><span class="line"></span><br><span class="line"><span class="comment">#out: tensor([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11])</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-shape-用于访问张量的形状和张量中元素的总量"><a href="#2-shape-用于访问张量的形状和张量中元素的总量" class="headerlink" title="2.shape  用于访问张量的形状和张量中元素的总量"></a>2.shape  用于访问张量的形状和张量中元素的总量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x.shape  <span class="comment">#接上文代码，输出张量x的形状</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out: torch.Size([12])</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-numel-输出张量内包含的元素个数，输出为标量"><a href="#3-numel-输出张量内包含的元素个数，输出为标量" class="headerlink" title="3.numel 输出张量内包含的元素个数，输出为标量"></a>3.numel 输出张量内包含的元素个数，输出为标量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x.numel  <span class="comment">#输出张量x内元素的个数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out: 12</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-reshape-改变张量形状而不改变元素值和元素数量"><a href="#4-reshape-改变张量形状而不改变元素值和元素数量" class="headerlink" title="4.reshape()  改变张量形状而不改变元素值和元素数量"></a>4.reshape()  改变张量形状而不改变元素值和元素数量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">X = x.reshape(<span class="number">3</span>,<span class="number">4</span>)  <span class="comment">#把前面含12个元素的向量改为三行四列的矩阵</span></span><br><span class="line">X</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor([[ 0,  1,  2,  3],</span></span><br><span class="line">    <span class="comment"># 	[ 4,  5,  6,  7],</span></span><br><span class="line">    <span class="comment"># 	[ 8,  9, 10, 11]])</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-zeros-ones-创建全零-全一-张量"><a href="#5-zeros-ones-创建全零-全一-张量" class="headerlink" title="5.zeros()/ones() 创建全零/全一 张量"></a>5.zeros()/ones() 创建全零/全一 张量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">torch.zeros((<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>))  <span class="comment">#创建2维的三行四列的矩阵</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor([[[0., 0., 0., 0.],</span></span><br><span class="line">   <span class="comment">#      [0., 0., 0., 0.],</span></span><br><span class="line">   <span class="comment">#      [0., 0., 0., 0.]],</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">#    [[0., 0., 0., 0.],</span></span><br><span class="line">    <span class="comment">#     [0., 0., 0., 0.],</span></span><br><span class="line">    <span class="comment">#      [0., 0., 0., 0.]]])</span></span><br></pre></td></tr></table></figure>
+<h3 id="6-tensor-可用于输入张量元素，可通过python的列表（或或者嵌套列表）来为张量中的每个元素赋值"><a href="#6-tensor-可用于输入张量元素，可通过python的列表（或或者嵌套列表）来为张量中的每个元素赋值" class="headerlink" title="6.tensor()  可用于输入张量元素，可通过python的列表（或或者嵌套列表）来为张量中的每个元素赋值"></a>6.tensor()  可用于输入张量元素，可通过python的列表（或或者嵌套列表）来为张量中的每个元素赋值</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">torch.tensor([[<span class="number">2</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]])  <span class="comment">#用列表为一个矩阵赋值</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:tensor([[2, 1, 4, 3],</span></span><br><span class="line"><span class="comment">#       [1, 2, 3, 4],</span></span><br><span class="line"><span class="comment">#       [4, 3, 2, 1]])</span></span><br></pre></td></tr></table></figure>
+<h3 id="7-常见标准运算符（-，-，-，-和-）都可以被升级为按元素运算"><a href="#7-常见标准运算符（-，-，-，-和-）都可以被升级为按元素运算" class="headerlink" title="7.常见标准运算符（+，-，*，/和**）都可以被升级为按元素运算"></a>7.常见标准运算符（+，-，*，/和**）都可以被升级为按元素运算</h3><p>​    exp()  函数可用来求自然指数，即 e^x</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">x = torch.tensor([<span class="number">1.</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">8</span>])  <span class="comment">#第一个元素1.为浮点数</span></span><br><span class="line">y = torch.tensor([<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>])</span><br><span class="line">x+y,x-y,x*y,x/y,x**y  <span class="comment">#对每个元素分别计算</span></span><br><span class="line">torch.exp(x)  <span class="comment">#求x的自然指数</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out=  (tensor([ 3.,  4.,  6., 10.]),</span></span><br><span class="line"><span class="comment"># tensor([-1.,  0.,  2.,  6.]),</span></span><br><span class="line"><span class="comment"># tensor([ 2.,  4.,  8., 16.]),</span></span><br><span class="line"><span class="comment">#tensor([0.5000, 1.0000, 2.0000, 4.0000]),</span></span><br><span class="line"><span class="comment">#tensor([ 1.,  4., 16., 64.]))</span></span><br><span class="line"><span class="comment">#tensor([2.7183e+00, 7.3891e+00, 5.4598e+01, 2.9810e+03])</span></span><br></pre></td></tr></table></figure>
+<h3 id="8-cat-函数用于将多个张量连接在一起"><a href="#8-cat-函数用于将多个张量连接在一起" class="headerlink" title="8.cat()  函数用于将多个张量连接在一起"></a>8.cat()  函数用于将多个张量连接在一起</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">X = torch.arange(<span class="number">12</span>,dtype=torch.float32).reshape(<span class="number">3</span>,<span class="number">4</span>)  <span class="comment">#创建从0到11的三行四列的矩阵，且元素均为浮点型</span></span><br><span class="line">Y = torch.tensor([[<span class="number">2.0</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],[<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>]])</span><br><span class="line">print(torch.cat((X,Y),dim=<span class="number">0</span>)) <span class="comment">#将X，Y矩阵沿0轴（纵向）连接</span></span><br><span class="line">torch.cat((X,Y),dim=<span class="number">1</span>)  <span class="comment">#将X，Y矩阵沿1轴（横向）连接</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  (tensor([[ 0.,  1.,  2.,  3.],</span></span><br><span class="line"><span class="comment">#         [ 4.,  5.,  6.,  7.],</span></span><br><span class="line"><span class="comment">#        [ 8.,  9., 10., 11.],</span></span><br><span class="line"><span class="comment">#       [ 2.,  1.,  4.,  3.],</span></span><br><span class="line"><span class="comment">#      [ 1.,  2.,  3.,  4.],</span></span><br><span class="line"><span class="comment">#     [ 4.,  3.,  2.,  1.]]),</span></span><br><span class="line"><span class="comment"># tensor([[ 0.,  1.,  2.,  3.,  2.,  1.,  4.,  3.],</span></span><br><span class="line"><span class="comment">#    [ 4.,  5.,  6.,  7.,  1.,  2.,  3.,  4.],</span></span><br><span class="line"><span class="comment">#   [ 8.,  9., 10., 11.,  4.,  3.,  2.,  1.]]))</span></span><br></pre></td></tr></table></figure>
+<h3 id="9-使用“-”判断两个张量中的每个元素是否相等"><a href="#9-使用“-”判断两个张量中的每个元素是否相等" class="headerlink" title="9.使用“==”判断两个张量中的每个元素是否相等"></a>9.使用“==”判断两个张量中的每个元素是否相等</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">X == Y</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor([[False,  True, False,  True],</span></span><br><span class="line"><span class="comment">#        [False, False, False, False],</span></span><br><span class="line"><span class="comment">#        [False, False, False, False]])</span></span><br></pre></td></tr></table></figure>
+<h3 id="10-sum-函数可求张量内所有元素的和，产生一个只有一个元素的张量"><a href="#10-sum-函数可求张量内所有元素的和，产生一个只有一个元素的张量" class="headerlink" title="10.sum()  函数可求张量内所有元素的和，产生一个只有一个元素的张量"></a>10.sum()  函数可求张量内所有元素的和，产生一个只有一个元素的张量</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">X.<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor(66.)</span></span><br></pre></td></tr></table></figure>
+<h3 id="11-广播机制-形状不同的向量可以通过广播机制扩充成形状相同的形状进而计算。"><a href="#11-广播机制-形状不同的向量可以通过广播机制扩充成形状相同的形状进而计算。" class="headerlink" title="11.广播机制  形状不同的向量可以通过广播机制扩充成形状相同的形状进而计算。"></a>11.广播机制  形状不同的向量可以通过广播机制扩充成形状相同的形状进而计算。</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a = torch.arange(<span class="number">3</span>).reshape(<span class="number">3</span>,<span class="number">1</span>)  <span class="comment">#创建一个从0-2的三行一列的矩阵</span></span><br><span class="line">b = torch.arange(<span class="number">2</span>).reshape(<span class="number">1</span>,<span class="number">2</span>)  <span class="comment">#创建一个从0-1的一行两列的矩阵</span></span><br><span class="line">a,b</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  (tensor([[0],</span></span><br><span class="line"><span class="comment">#         [1],</span></span><br><span class="line"><span class="comment">#         [2]]),</span></span><br><span class="line"><span class="comment"># tensor([[0, 1]]))</span></span><br><span class="line"></span><br><span class="line">a+b</span><br><span class="line"><span class="comment">#out:tensor([[0, 1],</span></span><br><span class="line"><span class="comment">#        [1, 2],</span></span><br><span class="line"><span class="comment">#        [2, 3]])</span></span><br></pre></td></tr></table></figure>
+<h3 id="12-元素索引-具体用法和列表的索引类似"><a href="#12-元素索引-具体用法和列表的索引类似" class="headerlink" title="12.元素索引  具体用法和列表的索引类似"></a>12.元素索引  具体用法和列表的索引类似</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">X[<span class="number">0</span>][<span class="number">2</span>]  <span class="comment"># 输出第一行第三列的元素</span></span><br><span class="line"><span class="comment">#out: tensor(2.)</span></span><br><span class="line">X[<span class="number">0</span>,<span class="number">2</span>]  <span class="comment">#同上</span></span><br><span class="line">X[<span class="number">0</span>:<span class="number">2</span>]  <span class="comment">#输出第一第二行（从冒号前值的到冒号后的值，但不包括冒号后的值）</span></span><br><span class="line"><span class="comment">#out:  tensor([[0., 1., 2., 3.],</span></span><br><span class="line"><span class="comment">#       [4., 5., 6., 7.]])</span></span><br><span class="line">X[<span class="number">0</span>:<span class="number">2</span>,<span class="number">3</span>]  <span class="comment">#先取出第一行和第二行，然后再取第四列的元素，输出</span></span><br><span class="line"><span class="comment">#out:  tensor([[3.],</span></span><br><span class="line"><span class="comment">#        [7.]])</span></span><br><span class="line">X[<span class="number">0</span>:<span class="number">2</span>,<span class="number">1</span>:<span class="number">3</span>]  <span class="comment">#先取出第一行第二行，再取出第二列到第三列的元素，输出</span></span><br><span class="line"><span class="comment">#out:  tensor([[1., 2.],</span></span><br><span class="line"><span class="comment">#        [5., 6.]])</span></span><br><span class="line">X[-<span class="number">1</span>]  <span class="comment">#-1即为倒序输出，大体如上</span></span><br><span class="line"><span class="comment">#out:  tensor([ 8.,  9., 10., 11.])</span></span><br></pre></td></tr></table></figure>
+<p>​    也可用索引的方法写入元素</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">X[<span class="number">1</span>,<span class="number">2</span>] = <span class="number">9</span>  <span class="comment">#把第二行第三列的元素替换为9</span></span><br><span class="line">X</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor([[ 0.,  1.,  2.,  3.],</span></span><br><span class="line"><span class="comment">#        [ 4.,  5.,  9.,  7.],</span></span><br><span class="line"><span class="comment">#        [ 8.,  9., 10., 11.]])</span></span><br><span class="line"></span><br><span class="line">X[<span class="number">0</span>:<span class="number">2.</span>:] = <span class="number">12</span>  <span class="comment">#把第一行和第二行的元素替换为12，也可以写为X[0:2]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  tensor([[12., 12., 12., 12.],</span></span><br><span class="line"><span class="comment">#        [12., 12., 12., 12.],</span></span><br><span class="line"><span class="comment">#        [ 8.,  9., 10., 11.]])</span></span><br></pre></td></tr></table></figure>
+<h4 id="13-内存分配问题"><a href="#13-内存分配问题" class="headerlink" title="13.内存分配问题"></a>13.内存分配问题</h4><p>​    运行一些操作可能会导致为新结果分配内存</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">before = <span class="built_in">id</span>(Y)  <span class="comment">#id()是类似于C语言指针的东西，存放着变量的地址</span></span><br><span class="line">Y = Y + X</span><br><span class="line"><span class="built_in">id</span>(Y) == before  <span class="comment">#判断Y的地址是否发生变化</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out: False</span></span><br></pre></td></tr></table></figure>
+<p>​    执行原地操作</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Z = torch.zeros_like(Y)  <span class="comment">#创建一个和Y形状相似但全为0的张量Z</span></span><br><span class="line">print(<span class="string">&#x27;id(z):&#x27;</span>,<span class="built_in">id</span>(Z))  <span class="comment">#输出Z的地址</span></span><br><span class="line">Z[:] = X + Y  <span class="comment">#把Z的元素全部替换为X+Y的值</span></span><br><span class="line">print(<span class="string">&#x27;id(Z):&#x27;</span>,<span class="built_in">id</span>(Z))  <span class="comment">#再次输出</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  id(Z): 2825373601664</span></span><br><span class="line"><span class="comment">#	   id(Z): 2825373601664</span></span><br></pre></td></tr></table></figure>
+<p>​    可以看到使用该方法没有造成新的地址出现</p>
+<p>​    如果在后续计算中没有重复使用X，我们也可以使用X[:] = X + Y或X + = Y来减少操作的内存开销</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">before = <span class="built_in">id</span>(X)</span><br><span class="line">X += Y  <span class="comment">#把计算后的值放进了X中</span></span><br><span class="line"><span class="built_in">id</span>(X) == before</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  True</span></span><br></pre></td></tr></table></figure>
+<h3 id="14-转换为Numpy张量-Numpy是常用的基础的python张量表示库"><a href="#14-转换为Numpy张量-Numpy是常用的基础的python张量表示库" class="headerlink" title="14.转换为Numpy张量   Numpy是常用的基础的python张量表示库"></a>14.转换为Numpy张量   Numpy是常用的基础的python张量表示库</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A = X.numpy()</span><br><span class="line">B = torch.tensor(A)</span><br><span class="line"><span class="built_in">type</span>(A),<span class="built_in">type</span>(B)</span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  (numpy.ndarray, torch.Tensor)</span></span><br></pre></td></tr></table></figure>
+<p>​    将大小为1的张量转换为Python标量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = torch.tensor([<span class="number">3.5</span>])</span><br><span class="line">a,a.item(),<span class="built_in">float</span>(a),<span class="built_in">int</span>(a)  <span class="comment">#分别将其转换为源形式、Numpy浮点数、浮点型、int型</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#out:  (tensor([3.5000]), 3.5, 3.5, 3)</span></span><br></pre></td></tr></table></figure>
 
                 
             </div>
@@ -524,7 +525,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/</a>
+                    <a href="http://example.com/2021/04/28/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">http://example.com/2021/04/28/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -731,9 +732,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/04/28/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
                     <div class="card-image">
@@ -751,9 +753,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -762,6 +764,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -772,13 +775,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/22/%E8%BE%BE%E6%91%A9%E9%99%A2-%E8%A7%86%E8%A7%89AI-Day1/">
+                <a href="/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
                     <div class="card-image">
                         
                         
-                        <img src="https://ftp.bmp.ovh/imgs/2021/03/317308174f377106.png" class="responsive-img" alt="达摩院-视觉AI-Day1">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机组成原理第一次作业">
                         
-                        <span class="card-title">达摩院-视觉AI-Day1</span>
+                        <span class="card-title">计算机组成原理第一次作业</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,7 +792,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-23
                             </span>
                         <span class="publish-author">
                             
