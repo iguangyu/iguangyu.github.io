@@ -474,39 +474,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>##导论-视觉AI技术应用探索<br>###视觉生产技术<br>####一，定义和分类</p>
-<blockquote>
+                <h2 id="导论-视觉AI技术应用探索"><a href="#导论-视觉AI技术应用探索" class="headerlink" title="导论-视觉AI技术应用探索"></a>导论-视觉AI技术应用探索</h2><h3 id="视觉生产技术"><a href="#视觉生产技术" class="headerlink" title="视觉生产技术"></a>视觉生产技术</h3><h4 id="一，定义和分类"><a href="#一，定义和分类" class="headerlink" title="一，定义和分类"></a>一，定义和分类</h4><blockquote>
 <p>1，定义</p>
-</blockquote>
 <ul>
 <li>一类是视觉理解， 比如检测，识别，分割等</li>
-<li>另外一类是视觉生产，也可以理解为怎么去产生视觉，指通过一个/一系列视觉过程，产生新的视觉表达。<blockquote>
-<p>2, 分类</p>
-</blockquote>
-</li>
-<li>视觉生产主要包括生成，拓展，摘要，升维，另外还有增强/变换，插入/合成，擦除等。</li>
+<li>另外一类是视觉生产，也可以理解为怎么去产生视觉，指通过一个/一系列视觉过程，产生新的视觉表达。<br>2, 分类</li>
+<li>视觉生产主要包括生成，拓展，摘要，升维，另外还有增强/变换，插入/合成，擦除等。<ul>
 <li>生成: 从 0 到 1</li>
 <li>拓展: 从 1 到 N</li>
 <li>摘要: 从 N 到 1</li>
 <li>升维: 从 An 到 An+1</li>
 <li>增强/变换: 从 A 到 B</li>
 <li>插入/合成: A + B = C</li>
-<li>擦除: A - B = C<blockquote>
-<p>3, 通用基础框架</p>
-</blockquote>
+<li>擦除: A - B = C<br>3, 通用基础框架</li>
+</ul>
 </li>
-<li>可能在细节上有细微不同，但是一般来讲其逻辑是类似的，包括请求(Request)，分发(Dispatch)，服务(Service)和响应(Response)四大部分。<blockquote>
-<p>4, 五大关键维度</p>
-</blockquote>
-</li>
+<li>可能在细节上有细微不同，但是一般来讲其逻辑是类似的，包括请求(Request)，分发(Dispatch)，服务(Service)和响应(Response)四大部分。<br>4, 五大关键维度</li>
 <li>可看: 满足视觉/美学表现</li>
 <li>合理: 合乎语义/内容逻辑</li>
 <li>多样: 保证结果的丰富性</li>
 <li>可控: 提供用户预期的抓手</li>
 <li>可用: 带来用户/商业价值</li>
 </ul>
-<p>####二，精细理解—分割抠图</p>
-<ul>
+</blockquote>
+<h4 id="二，精细理解—-分割抠图"><a href="#二，精细理解—-分割抠图" class="headerlink" title="二，精细理解—-分割抠图"></a>二，精细理解—-分割抠图</h4><ul>
 <li>识别：知道是什么，比如人的识别、物的识别；</li>
 <li>检测：识别+知道在哪，比如缺陷检测、多目标检测；</li>
 <li>分割：识别+检测+知道每一个像素是什么。</li>
@@ -518,21 +509,20 @@
 </ul>
 <blockquote>
 <p>2、解题思路</p>
-</blockquote>
 <ul>
 <li>复杂问题拆解：粗mask估计+精准matting</li>
 <li>丰富数据样本：设计图像mask统一模型</li>
 </ul>
-<p>3、效果展示<br><img src="https://img-blog.csdnimg.cn/2020060413511654.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20200604135325994.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20200604135357164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20200604135623421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"></p>
-<p>####三、视觉生成——从无到有</p>
-<blockquote>
+</blockquote>
+<p>3、效果展示<br><img src="https://img-blog.csdnimg.cn/2020060413511654.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200604135325994.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200604135357164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200604135623421.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""></p>
+<h4 id="三、视觉生成——从无到有"><a href="#三、视觉生成——从无到有" class="headerlink" title="三、视觉生成——从无到有"></a>三、视觉生成——从无到有</h4><blockquote>
 <p>1、鹿班</p>
+<ul>
+<li>鹿班是针对平面图像设计生成的产品，其视觉生成大概过程包括理需求、定草图、选状态、调细节、生成图、评好坏6个步骤。</li>
+</ul>
 </blockquote>
 <ul>
-<li><p>鹿班是针对平面图像设计生成的产品，其视觉生成大概过程包括理需求、定草图、选状态、调细节、生成图、评好坏6个步骤。</p>
-</li>
-<li><p>照图生图：参考原图，将风格、布局等信息学习并迁移到目标数据上；<br>个性化设计：多元化设计风格，结合商品品类、投放场景、目标客群的差异进行定制化设计。</p>
-<blockquote>
+<li>照图生图：参考原图，将风格、布局等信息学习并迁移到目标数据上；<br>个性化设计：多元化设计风格，结合商品品类、投放场景、目标客群的差异进行定制化设计。<blockquote>
 <p>2、AlibabaWood</p>
 </blockquote>
 </li>
@@ -540,34 +530,29 @@
 </li>
 <li><p>视频摘要</p>
 </li>
-<li><p>视频封面<br>####四、视觉编辑——移花接木<br>1、视频植入<br>视频植入就是在视频中加入一些本来没有的内容，当前其应用最广泛的就是广告。<br>视频植入是一项非常复杂的技术，需要考虑到方方面面，比如广告位检测、广告位跟踪等等，有时会遇到遮挡、移出屏幕等复杂情况跟踪，而且在视频植入之后还要考虑广告是否能够跟视频细节匹配、光影渲染等问题。</p>
-</li>
+<li>视频封面<h4 id="四、视觉编辑——移花接木"><a href="#四、视觉编辑——移花接木" class="headerlink" title="四、视觉编辑——移花接木"></a>四、视觉编辑——移花接木</h4>1、视频植入<br>视频植入就是在视频中加入一些本来没有的内容，当前其应用最广泛的就是广告。<br>视频植入是一项非常复杂的技术，需要考虑到方方面面，比如广告位检测、广告位跟踪等等，有时会遇到遮挡、移出屏幕等复杂情况跟踪，而且在视频植入之后还要考虑广告是否能够跟视频细节匹配、光影渲染等问题。</li>
 </ul>
 <p>2、视频内容擦除<br>实用技术有字幕擦除、台标擦除、广告擦除、场景文字擦除、人体擦除等，其核心挑战与亮点是分割，只有更精确的分割才能够精确的擦除。</p>
 <p>3、画幅变化<br>在不同设备上播放视频时可能会出现尺寸不匹配的情况，这时候就要进行画幅变化，变化之后为了有完整的视觉效果，需要进行内容补全。</p>
 <p>4、图像尺寸变化<br>事先准备好的图片在不同尺寸不同场合可以自动变化，适应各种情况。</p>
-<p>####五、视觉增强——修旧如新</p>
-<blockquote>
+<h4 id="五、视觉增强——修旧如新"><a href="#五、视觉增强——修旧如新" class="headerlink" title="五、视觉增强——修旧如新"></a>五、视觉增强——修旧如新</h4><blockquote>
 <p>1、视频增强</p>
-</blockquote>
 <ul>
 <li>对视频效果的增强，包括包括单点核心技术和复合应用技术。</li>
 <li>单点核心技术：人脸增强、去噪声、通用场景超分、LDR升HDR、倍频、去划痕</li>
 <li>复合应用技术、人脸修复、标清转高清、LDR-HDR互转、4K重生、（磁带）老片修复、端上实时增强</li>
 </ul>
-<blockquote>
 <p>2、实例</p>
-</blockquote>
 <ul>
 <li>人脸修复增强：人脸是最重要的目标对象，可以用视觉增强技术对人脸进行修复增强，突出主要信息。</li>
 <li>渲染图超分：把低分辨率图像放大到与高清原图一样的清晰度。</li>
 <li>视频超分：除了对图像进行超分外，还可以对视频进行超分，使得视频更加清晰，增加显示效果。</li>
-<li>视频插帧：众所周知，帧率越高观感越流畅。对视频进行插帧可以有效的减少视频的卡顿感。</li>
-<li>HDR 色彩扩展：除了帧率之外，色彩也是一个很重要的元素，也是视频高清的一个必要条件，运用视觉增强技术可以很好进行HDR 色彩扩展，增强视频显示效果。</li>
+<li>视频插帧：众所周知，帧率越高观感越流畅。对视频进行插帧可以有效的减少视频的卡顿感。<br>-HDR 色彩扩展：除了帧率之外，色彩也是一个很重要的元素，也是视频高清的一个必要条件，运用视觉增强技术可以很好进行HDR 色彩扩展，增强视频显示效果。</li>
 <li>风格迁移与颜色拓展：视觉增强还可以用来进行风格迁移，比如某些相机软件，可以将一些名画的风格迁移到用户所拍摄的照片上，实现照片的风格多样化。另外，视觉增强还可以进行颜色的拓展，同时产生不同色彩搭配的效果，满足不同的需求和色彩的多样性。</li>
 </ul>
-<p>####六、视觉制造——由虚入实<br>我们可以利用视觉制造技术来解决实际生产过程中面临的效率低、协同差、定制难等问题。</p>
-<p>####七、视觉开放平台<br>上面所提到的技术都可以在阿里巴巴的视觉智能开放平台<a target="_blank" rel="noopener" href="https://vision.aliyun.com/%E4%B8%8A%E6%89%BE%E5%88%B0%E3%80%82%E5%88%92%E9%87%8D%E7%82%B9%EF%BC%9A%E7%9B%AE%E5%89%8D%E8%BF%98%E6%98%AF%E5%85%8D%E8%B4%B9%E4%BD%BF%E7%94%A8%E3%80%82">https://vision.aliyun.com/上找到。划重点：目前还是免费使用。</a><br><img src="https://img-blog.csdnimg.cn/20200604150754897.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20200604150800568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"><br><img src="https://img-blog.csdnimg.cn/20200604150806341.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70"></p>
+</blockquote>
+<h4 id="六、视觉制造——由虚入实"><a href="#六、视觉制造——由虚入实" class="headerlink" title="六、视觉制造——由虚入实"></a>六、视觉制造——由虚入实</h4><p>我们可以利用视觉制造技术来解决实际生产过程中面临的效率低、协同差、定制难等问题。</p>
+<h4 id="七、视觉开放平台"><a href="#七、视觉开放平台" class="headerlink" title="七、视觉开放平台"></a>七、视觉开放平台</h4><p>上面所提到的技术都可以在阿里巴巴的视觉智能开放平台<a target="_blank" rel="noopener" href="https://vision.aliyun.com/上找到。划重点：目前还是免费使用。">https://vision.aliyun.com/上找到。划重点：目前还是免费使用。</a><br><img src="https://img-blog.csdnimg.cn/20200604150754897.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200604150800568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""><br><img src="https://img-blog.csdnimg.cn/20200604150806341.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzYyNDk0NQ==,size_16,color_FFFFFF,t_70" alt=""></p>
 
                 
             </div>
@@ -805,13 +790,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
+                <a href="/2021/03/23/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E6%A6%82%E8%AE%BA/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机组成原理第一次作业">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="模式识别考试(一)">
                         
-                        <span class="card-title">计算机组成原理第一次作业</span>
+                        <span class="card-title">模式识别考试(一)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -996,6 +981,13 @@
 
 </main>
 
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 

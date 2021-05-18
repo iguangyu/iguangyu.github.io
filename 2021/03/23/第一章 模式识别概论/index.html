@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="计算机组成原理第一次作业, iGUU&#39;Blog">
+    <meta name="keywords" content="模式识别考试(一), iGUU&#39;Blog">
     <meta name="description" content="didiao">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>计算机组成原理第一次作业 | iGUU&#39;Blog</title>
+    <title>模式识别考试(一) | iGUU&#39;Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">计算机组成原理第一次作业</h1>
+                    <h1 class="description center-align post-title">模式识别考试(一)</h1>
                 </div>
             </div>
         </div>
@@ -474,30 +474,80 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>第一章</p>
-<ul>
-<li>1.1946年研制成功的第一台电子数字计算机称为  ENIAC   ，1949年研制成功的第一台程序内存的计算机称为  EDSAC  。</li>
-<li>2.1978年。，英特尔公司开发的    Intel 8066    是世界上第1片通用16位微处理器，可寻址存储容量是    1 MB   。</li>
-<li>3.至今为止计算机中所有信息仍以二进制方式表示的理由是    物理器件性能限制    。</li>
-<li>4.目前大多数集成电路生产中所采用的的基本材料为   单晶硅   。</li>
-<li>5.中央处理器的核心由  运算器  和  控制器  组成。</li>
-<li>6.2000年研制的Pentium 4是   1   位微处理器，一个CPU芯片内含有的晶体管数目为 2百万，可寻址的内存储器容量为   3   。</li>
-<li>7.取指周期中从内存读出的信息流称为   指令   流，执行周期中从内存读出的信息流称为  数据 流。</li>
+                <h2 id="第一章-模式识别概论"><a href="#第一章-模式识别概论" class="headerlink" title="第一章 模式识别概论"></a>第一章 模式识别概论</h2><ul>
+<li><p>1.1 模式和模式识别的概念</p>
+</li>
+<li><p>1.2 模式识别系统</p>
+</li>
+<li><p>1.3 模式识别方法</p>
+</li>
+<li><p>1.4 模式识别的应用</p>
+</li>
 </ul>
-</blockquote>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/03/f27eaf128567c2cb.png" alt=""></p>
-<blockquote>
-<p>第二章</p>
+<h3 id="1-1-模式和模式识别的概念"><a href="#1-1-模式和模式识别的概念" class="headerlink" title="1.1    模式和模式识别的概念"></a>1.1    模式和模式识别的概念</h3><ul>
+<li><p>模式: </p>
 <ul>
-<li>1.计算机系统中采用补码运算的目的是为了   简化计算机的设计   。</li>
-<li>2.定长8位字长的字，采用2进制补码表示，可表示的输出范围是     -128~+127    。</li>
-<li>3.在定点二进制运算器中，减法运算一般通过    补码运算的二进制加法器   来实现。</li>
-<li>4.在定点数运算中产生溢出 的原因是    运算过程中最高位产生了进位或者错位    。</li>
-<li>5.在定点运算器中，无论采用双符号位还是单符号位，必须有  溢出   判断电路，它一般用  异或门   逻辑门实现。</li>
+<li>要识别的对象都可以称作是个模式</li>
+<li>模式不是识别对象本身</li>
+<li>而是通过对信号的采样，量化和处理之后得到的关于识别对象描述的一组属性集合-</li>
 </ul>
+</li>
+<li><p>模式识别（分类）</p>
+<ul>
+<li>根据模式描述，判断不同的识别对象是否属于相同类别。</li>
+<li><em><strong>概念：模式识别就是机器识别、计算机识别，目的在于让机器自动识别食物</strong></em></li>
+</ul>
+</li>
+</ul>
+<h3 id="1-2-模式识别系统"><a href="#1-2-模式识别系统" class="headerlink" title="1.2   模式识别系统"></a>1.2   模式识别系统</h3><blockquote>
+<h6 id="未知类别模式的分类"><a href="#未知类别模式的分类" class="headerlink" title="未知类别模式的分类"></a>未知类别模式的分类</h6><p><img src="https://ftp.bmp.ovh/imgs/2021/05/f427e04dcb83d847.png" alt="1.2"></p>
 </blockquote>
-<p>认真看：【例1】【例2】【例11】【例12】【例28】【例30】</p>
+<h3 id="1-3-模式识别方法"><a href="#1-3-模式识别方法" class="headerlink" title="1.3  模式识别方法"></a>1.3  模式识别方法</h3><ul>
+<li><p>有监督学习（有导师学习）</p>
+<ul>
+<li>已知训练样本集合中的样本</li>
+<li>已知每个样本及所属类别</li>
+<li>利用训练样本学习分类器，对未知类别样本分类</li>
+<li>关键问题：如何度量样本间的“相似性”</li>
+</ul>
+</li>
+<li><p>无监督学习（无导师学习）</p>
+<ul>
+<li>已知训练样本集合中的样本</li>
+<li>不知道每个样本所属的类别，甚至类别数量也未知</li>
+<li>利用无监督样本集，能够发现某种规律性的东西，构造相应的分类器</li>
+</ul>
+</li>
+</ul>
+<h2 id="第二章-特征的选择与优化"><a href="#第二章-特征的选择与优化" class="headerlink" title="第二章  特征的选择与优化"></a>第二章  特征的选择与优化</h2><ul>
+<li>2.1 特征选择和提取的基本概念</li>
+<li>2.2 类别可分性测度</li>
+<li>2.3 特征空间描述与分布分析</li>
+<li>2.4 基于主成分分析的特征提取</li>
+</ul>
+<h2 id="第四章-基于概率统计的贝叶斯分类器设计"><a href="#第四章-基于概率统计的贝叶斯分类器设计" class="headerlink" title="第四章 基于概率统计的贝叶斯分类器设计"></a>第四章 基于概率统计的贝叶斯分类器设计</h2><ul>
+<li>4.1 相关概率</li>
+<li>4.2 贝叶斯决策</li>
+<li>4.3 最小错误率贝叶斯分类器</li>
+<li>4.4 最小风险贝叶斯分类器</li>
+</ul>
+<h3 id="4-1-相关概率"><a href="#4-1-相关概率" class="headerlink" title="4.1 相关概率"></a>4.1 相关概率</h3><script type="math/tex; mode=display">
+1.先验概率P(w_i)</script><script type="math/tex; mode=display">
+2.类(条件)概率密度函数P(X|w_i)</script><script type="math/tex; mode=display">
+3.后验概率P(w_i|X)</script><script type="math/tex; mode=display">
+4.条件概率和后验概率的区别</script><script type="math/tex; mode=display">
+5.贝叶斯公式</script><h3 id="4-3-最小错误率贝叶斯决策"><a href="#4-3-最小错误率贝叶斯决策" class="headerlink" title="4.3 最小错误率贝叶斯决策"></a>4.3 最小错误率贝叶斯决策</h3><h5 id="1-决策规则"><a href="#1-决策规则" class="headerlink" title="1. 决策规则:"></a>1. 决策规则:</h5><blockquote>
+<h6 id="设有M类模式，已知先验概率和类条件概率密度"><a href="#设有M类模式，已知先验概率和类条件概率密度" class="headerlink" title="设有M类模式，已知先验概率和类条件概率密度"></a>设有M类模式，已知先验概率和类条件概率密度</h6></blockquote>
+<script type="math/tex; mode=display">
+P(w_i|X) = max\{P(w_j|X)\}, j=1,2,···,M</script><blockquote>
+<h6 id="最小错误率贝叶斯决策规则"><a href="#最小错误率贝叶斯决策规则" class="headerlink" title="最小错误率贝叶斯决策规则"></a>最小错误率贝叶斯决策规则</h6><h6 id="基于最小错误率的贝叶斯决策是按照后验概率大小判决的"><a href="#基于最小错误率的贝叶斯决策是按照后验概率大小判决的" class="headerlink" title="基于最小错误率的贝叶斯决策是按照后验概率大小判决的"></a>基于最小错误率的贝叶斯决策是按照后验概率大小判决的</h6></blockquote>
+<h5 id="2-几种等价形式"><a href="#2-几种等价形式" class="headerlink" title="2.几种等价形式"></a>2.几种等价形式</h5><script type="math/tex; mode=display">
+P(X|w_i)P(w_i) = max\{P(X|w_j)p(w_j)\},j = 1,2,···,M</script><blockquote>
+<h6 id="似然比形式："><a href="#似然比形式：" class="headerlink" title="似然比形式："></a>似然比形式：</h6><script type="math/tex; mode=display">
+l(X) = \frac{P(X|w_1)}{P(X|w_2)}\qquad\{\frac{>P(w_2)}{<P(w_1)}\qquad</script><script type="math/tex; mode=display">
+l(x)在统计学中称为似然比，\frac{P(w_2)}{P(w_1)}\qquad称为似然比阈值</script><h6 id="对数形式"><a href="#对数形式" class="headerlink" title="对数形式:"></a>对数形式:</h6><script type="math/tex; mode=display">
+h(X) = lnl(X) = lnP(X|w_1)-lnP(X|w_2)\{\frac{>P(w_2)}{<P(w_1)}\qquad</script></blockquote>
+<h3 id="4-4-最小风险贝叶斯决策"><a href="#4-4-最小风险贝叶斯决策" class="headerlink" title="4.4 最小风险贝叶斯决策"></a>4.4 最小风险贝叶斯决策</h3><h5 id="1-决策规则-1"><a href="#1-决策规则-1" class="headerlink" title="1.决策规则"></a>1.决策规则</h5><p><img src="https://i.bmp.ovh/imgs/2021/05/320608f25dcd490d.png" alt="决策规则"></p>
 
                 
             </div>
@@ -524,7 +574,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/</a>
+                    <a href="http://example.com/2021/03/23/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E6%A6%82%E8%AE%BA/">http://example.com/2021/03/23/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E6%A6%82%E8%AE%BA/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -735,13 +785,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/04/28/pytorch%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
                     <div class="card-image">
                         
                         
-                        <img src="https://ftp.bmp.ovh/imgs/2021/03/c3e3e0364bca19fd.png" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机组成原理第一次作业">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">计算机组成原理第一次作业</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -752,7 +802,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-28
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-03-23
                         </span>
                         <span class="publish-author">
                             
@@ -772,13 +822,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/23/%E7%AC%AC%E4%B8%80%E7%AB%A0%20%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E6%A6%82%E8%AE%BA/">
+                <a href="/2021/03/22/%E8%BE%BE%E6%91%A9%E9%99%A2-%E8%A7%86%E8%A7%89AI-Day1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="模式识别考试(一)">
+                        <img src="https://ftp.bmp.ovh/imgs/2021/03/317308174f377106.png" class="responsive-img" alt="达摩院-视觉AI-Day1">
                         
-                        <span class="card-title">模式识别考试(一)</span>
+                        <span class="card-title">达摩院-视觉AI-Day1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,7 +839,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-22
                             </span>
                         <span class="publish-author">
                             
