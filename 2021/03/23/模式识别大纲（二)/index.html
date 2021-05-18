@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="计算机组成原理第一次作业, iGUU&#39;Blog">
+    <meta name="keywords" content="模式识别大纲(二), iGUU&#39;Blog">
     <meta name="description" content="didiao">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>计算机组成原理第一次作业 | iGUU&#39;Blog</title>
+    <title>模式识别大纲(二) | iGUU&#39;Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -320,12 +320,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">计算机组成原理第一次作业</h1>
+                    <h1 class="description center-align post-title">模式识别大纲(二)</h1>
                 </div>
             </div>
         </div>
@@ -474,30 +474,82 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-<p>第一章</p>
-<ul>
-<li>1.1946年研制成功的第一台电子数字计算机称为  ENIAC   ，1949年研制成功的第一台程序内存的计算机称为  EDSAC  。</li>
-<li>2.1978年。，英特尔公司开发的    Intel 8066    是世界上第1片通用16位微处理器，可寻址存储容量是    1 MB   。</li>
-<li>3.至今为止计算机中所有信息仍以二进制方式表示的理由是    物理器件性能限制    。</li>
-<li>4.目前大多数集成电路生产中所采用的的基本材料为   单晶硅   。</li>
-<li>5.中央处理器的核心由  运算器  和  控制器  组成。</li>
-<li>6.2000年研制的Pentium 4是   1   位微处理器，一个CPU芯片内含有的晶体管数目为 2百万，可寻址的内存储器容量为   3   。</li>
-<li>7.取指周期中从内存读出的信息流称为   指令   流，执行周期中从内存读出的信息流称为  数据 流。</li>
+                <h3 id="第五章-判别函数分类器设计"><a href="#第五章-判别函数分类器设计" class="headerlink" title="第五章 判别函数分类器设计"></a>第五章 判别函数分类器设计</h3><ul>
+<li>5.1 判别函数</li>
+<li>5.2 线性判别函数和几何性质</li>
+<li>5.3 感知器算法</li>
+<li>5.4 梯度法</li>
+<li>5.5 Fisher线性判别</li>
 </ul>
-</blockquote>
-<p><img src="https://ftp.bmp.ovh/imgs/2021/03/f27eaf128567c2cb.png" alt=""></p>
+<h3 id="第六章-神经网络分类器设计"><a href="#第六章-神经网络分类器设计" class="headerlink" title="第六章 神经网络分类器设计"></a>第六章 神经网络分类器设计</h3><ul>
+<li>6.1 人工神经元的数学模型</li>
+<li>6.2 人工神经元的基本概念和基本原理</li>
+<li>6.3 前馈神经网络</li>
+<li>6.4 径向基函数神经网络</li>
+</ul>
+<h4 id="6-1-人工神经元模型"><a href="#6-1-人工神经元模型" class="headerlink" title="6.1 人工神经元模型"></a>6.1 人工神经元模型</h4><p><img src="https://i.bmp.ovh/imgs/2021/05/40e143aad54b01e4.png" alt=""></p>
 <blockquote>
-<p>第二章</p>
-<ul>
-<li>1.计算机系统中采用补码运算的目的是为了   简化计算机的设计   。</li>
-<li>2.定长8位字长的字，采用2进制补码表示，可表示的输出范围是     -128~+127    。</li>
-<li>3.在定点二进制运算器中，减法运算一般通过    补码运算的二进制加法器   来实现。</li>
-<li>4.在定点数运算中产生溢出 的原因是    运算过程中最高位产生了进位或者错位    。</li>
-<li>5.在定点运算器中，无论采用双符号位还是单符号位，必须有  溢出   判断电路，它一般用  异或门   逻辑门实现。</li>
+<p><span  style="color: #FF1744; ">人工神经元间的互连</span> ： 信息传递路径轴突 —- 突触 —- 树突的简化</p>
+<p><span  style="color: #FF1744; ">连接的权值</span> ：两个互连的神经元之间相互作用的强弱。人工神经元相当于<span  style="color: #FF1744; ">多输入</span>，<span  style="color: #FF1744; ">单输出</span>的<span  style="color: #FF1744; ">非线性</span>阈值器件。</p>
+</blockquote>
+<h4 id="6-2-人工神经网络"><a href="#6-2-人工神经网络" class="headerlink" title="6.2 人工神经网络"></a>6.2 人工神经网络</h4><blockquote>
+<h6 id="神经网络的学习"><a href="#神经网络的学习" class="headerlink" title="神经网络的学习"></a>神经网络的学习</h6><ul>
+<li><p>有导师的学习方法：主要采用误差学习方法</p>
+</li>
+<li><p>无导师的学习方法：主要采用<strong>Hebb</strong>学习规则</p>
+<p>​    a) <strong>Hebb</strong>学习规则</p>
+<p>​        如果神经网络中某个神经元与另一直接与其相连的神经元同时处于兴奋状态，那么这两个神经元之间的连接强度应该加强。</p>
+<script type="math/tex; mode=display">
+w_{ij}(t+1)=w_{ij}(t)+\eta y_j(t)y_i(t)</script></li>
+</ul>
+<h6 id="误差学习方法"><a href="#误差学习方法" class="headerlink" title="误差学习方法"></a>误差学习方法</h6><p><img src="https://i.bmp.ovh/imgs/2021/05/cd900b91ad200855.png" alt="误差学习方法"></p>
+</blockquote>
+<h4 id="6-3-前馈神经网络"><a href="#6-3-前馈神经网络" class="headerlink" title="6.3 前馈神经网络"></a>6.3 前馈神经网络</h4><blockquote>
+<h5 id="1-感知器网络"><a href="#1-感知器网络" class="headerlink" title="1. 感知器网络"></a>1. 感知器网络</h5><ul>
+<li>单程感知器网络结构特点<ul>
+<li>a) 双层（输入层，输出层）</li>
+<li>b) 两层之间全互连</li>
+<li>c) 连接权值可调</li>
+<li>d) 输出层神经元个数等于类别数（两类问题时输出层为一个神经元）</li>
+</ul>
+</li>
+<li>单层感知器网络算法描述</li>
+</ul>
+<h5 id="2-BP网络"><a href="#2-BP网络" class="headerlink" title="2.BP网络"></a>2.BP网络</h5><ul>
+<li>BP神经网络的基本概念<ul>
+<li>BP神经网络是一种<span  style="color: #FF1744; ">多层前向神经网络</span>，其神经元的激励函数采用<span  style="color: #FF1744; ">连续可导函数</span>，因此输出量为连续量，从而实现输入输出任意非线性映射。</li>
+</ul>
+</li>
+<li>BP神经网络的算法两个阶段</li>
+<li>BP神经网络算法的特点</li>
 </ul>
 </blockquote>
-<p>认真看：【例1】【例2】【例11】【例12】【例28】【例30】</p>
+<h4 id="6-4-径向基函数神经网络"><a href="#6-4-径向基函数神经网络" class="headerlink" title="6.4 径向基函数神经网络"></a>6.4 径向基函数神经网络</h4><blockquote>
+<h5 id="1-径向基函数神经网络"><a href="#1-径向基函数神经网络" class="headerlink" title="1. 径向基函数神经网络"></a>1. 径向基函数神经网络</h5><ul>
+<li>径向基神经网络的概念</li>
+<li>径向基神经网络的特点</li>
+</ul>
+<h5 id="2-径向基函数神经网络的拓扑结构"><a href="#2-径向基函数神经网络的拓扑结构" class="headerlink" title="2.径向基函数神经网络的拓扑结构"></a>2.径向基函数神经网络的拓扑结构</h5><p><img src="https://i.bmp.ovh/imgs/2021/05/7355d566a1e5d26c.png" alt=""></p>
+</blockquote>
+<h3 id="第七章-决策树分类器设计"><a href="#第七章-决策树分类器设计" class="headerlink" title="第七章 决策树分类器设计"></a>第七章 决策树分类器设计</h3><ul>
+<li>7.1 决策树的基本概念</li>
+<li>7.2 属性选择的几个度量</li>
+</ul>
+<h4 id="7-1-决策树的基本概念"><a href="#7-1-决策树的基本概念" class="headerlink" title="7.1 决策树的基本概念"></a>7.1 决策树的基本概念</h4><blockquote>
+<h5 id="1-决策树的基本原理"><a href="#1-决策树的基本原理" class="headerlink" title="1. 决策树的基本原理"></a>1. 决策树的基本原理</h5><ul>
+<li>决策树的概念</li>
+<li>决策树的基本组成</li>
+<li>决策树分类步骤</li>
+<li>决策树基本算法</li>
+<li>决策树的优点</li>
+</ul>
+</blockquote>
+<h3 id="第九章-聚类分析"><a href="#第九章-聚类分析" class="headerlink" title="第九章 聚类分析"></a>第九章 聚类分析</h3><ul>
+<li>9.1 聚类分析的基本概念</li>
+<li>9.2 相似性度量和聚类准则</li>
+<li>9.1 基于距离阈值的聚类算法</li>
+<li>9.1 层次聚类法</li>
+</ul>
 
                 
             </div>
@@ -524,7 +576,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">http://example.com/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/</a>
+                    <a href="http://example.com/2021/03/23/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%A7%E7%BA%B2%EF%BC%88%E4%BA%8C)/">http://example.com/2021/03/23/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%A7%E7%BA%B2%EF%BC%88%E4%BA%8C)/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -735,13 +787,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2021/03/23/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%A7%E7%BA%B2%EF%BC%88%E4%B8%80%EF%BC%89/">
+                <a href="/2021/03/23/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="模式识别大纲(一)">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="计算机组成原理第一次作业">
                         
-                        <span class="card-title">模式识别大纲(一)</span>
+                        <span class="card-title">计算机组成原理第一次作业</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -772,13 +824,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/03/23/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%A7%E7%BA%B2%EF%BC%88%E4%BA%8C)/">
+                <a href="/2021/03/22/%E8%BE%BE%E6%91%A9%E9%99%A2-%E8%A7%86%E8%A7%89AI-Day1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="模式识别大纲(二)">
+                        <img src="https://ftp.bmp.ovh/imgs/2021/03/317308174f377106.png" class="responsive-img" alt="达摩院-视觉AI-Day1">
                         
-                        <span class="card-title">模式识别大纲(二)</span>
+                        <span class="card-title">达摩院-视觉AI-Day1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -789,7 +841,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-23
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-22
                             </span>
                         <span class="publish-author">
                             
